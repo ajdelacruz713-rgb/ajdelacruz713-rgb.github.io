@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Hub</title>
+    <style>
+        body {
+          margin: 0;
+          font-family: Arial;
+          background: #0d0d0d;
+          color: white;
+          text-align: center;
+        }
+
+        .hero {
+          padding: 100px 20px;
+          background: linear-gradient(black, #111);
+        }
+
+        .hero h1 {
+          font-size: 60px;
+          color: limegreen;
+        }
+
+        .tagline {
+          font-size: 22px;
+          color: lightgray;
+          margin-bottom: 30px;
+        }
+
+        button {
+          padding: 15px 30px;
+          border: none;
+          border-radius: 12px;
+          background: limegreen;
+          color: black;
+          font-size: 18px;
+          cursor: pointer;
+          font-weight: bold;
+        }
+
+        button:hover {
+          transform: scale(1.05);
+        }
+
+        #games {
+          padding: 40px;
+        }
+
+        .game-list {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 20px;
+        }
+
+        .card {
+          background: #1a1a1a;
+          padding: 20px;
+          border-radius: 15px;
+          width: 220px;
+          box-shadow: 0 0 10px limegreen;
+        }
+
+        .card h3 {
+          color: white;
+        }
+
+        .card a {
+          text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Gaming Hub</h1>
+        <p class="tagline">Discover amazing games and join the community</p>
+        <button onclick="scrollToGames()">Explore Games</button>
+    </div>
+
+    <div id="games">
+        <h2 style="color: limegreen; font-size: 36px; margin-bottom: 30px;">Featured Games</h2>
+        <div class="game-list">
+            <div class="card">
+                <h3>Game One</h3>
+                <p>An epic adventure awaits</p>
+                <button>Play Now</button>
+            </div>
+            <div class="card">
+                <h3>Game Two</h3>
+                <p>Challenge your skills</p>
+                <button>Play Now</button>
+            </div>
+            <div class="card">
+                <h3>Game Three</h3>
+                <p>Multiplayer action</p>
+                <button>Play Now</button>
+            </div>
+            <div class="card">
+                <h3>🔥 Cool Game</h3>
+                <a href="games/coolgame/index.html">
+                <button>PLAY</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function scrollToGames() {
+            document.getElementById('games').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
